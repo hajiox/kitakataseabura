@@ -1,0 +1,82 @@
+import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import './globals.css'
+
+const _geist = Geist({ subsets: ["latin"] });
+const _geistMono = Geist_Mono({ subsets: ["latin"] });
+
+const siteUrl = 'https://kitakataseabura.aizu-syokubura.com'
+
+export const metadata: Metadata = {
+  title: '喜多方背脂醤油ラーメン | 創業100年の醤油×国産極上背脂【会津ブランド館】送料無料',
+  description: '「あっさり」だけじゃない喜多方ラーメン界のニューウェーブ！創業100年の醤油と国産豚の極上背脂が織りなす至高の「こってり背脂醤油」。お店レベルのパンチ力をご自宅で。2食・6食セット、スープのみの3種類をご用意。',
+  generator: 'v0.app',
+  metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: '喜多方背脂醤油ラーメン | 創業100年の醤油×国産極上背脂【会津ブランド館】',
+    description: '「あっさり」だけじゃない喜多方ラーメン界のニューウェーブ！創業100年の醤油と国産豚の極上背脂が織りなす至高の「こってり背脂醤油」をご自宅で。送料無料。',
+    url: siteUrl,
+    siteName: '会津ブランド館',
+    images: [
+      {
+        url: '/ogp.jpg',
+        width: 1200,
+        height: 630,
+        alt: '喜多方背脂醤油ラーメン - 旨い！背脂の圧倒的コク。',
+      },
+    ],
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '喜多方背脂醤油ラーメン | 創業100年の醤油×国産極上背脂【会津ブランド館】',
+    description: '「あっさり」だけじゃない喜多方ラーメン界のニューウェーブ！創業100年の醤油と国産豚の極上背脂が織りなす至高の「こってり背脂醤油」をご自宅で。',
+    images: ['/ogp.jpg'],
+  },
+  icons: {
+    icon: [
+      {
+        url: '/favicon.jpg',
+        sizes: '32x32',
+      },
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
+  },
+  keywords: ['喜多方ラーメン', '背脂醤油ラーメン', '通販', 'お取り寄せ', '会津ブランド館', '送料無料', 'こってり', '国産豚背脂', '生麺'],
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="ja">
+      <body className="font-sans antialiased">
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  )
+}
