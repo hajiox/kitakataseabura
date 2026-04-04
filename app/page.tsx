@@ -5,6 +5,7 @@ import { Star, MapPin, Phone, Clock, Truck } from "lucide-react"
 
 const IMAGES = {
   hero: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/main-ZMw2OrmUMAKn6eDJEkvAY4q1dTHevE.jpg",
+  heroMobile: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mains-BmHXJFVgdioWGJw6qM4SMcjwTBO3eb.jpg",
   product2: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E6%A5%BD%E5%A4%A9%E4%BB%96TOP%EF%BC%882%E9%A3%9F%EF%BC%89-01-ZjQcsrPAXWGsyxjvI6qMbsRFZTUSje.jpg",
   product6: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E6%A5%BD%E5%A4%A9%E4%BB%96TOP%EF%BC%886%E9%A3%9F%EF%BC%89-01-wZf63xHN9gUtc9r2zel35qtHjSs1TO.jpg",
   product5soup: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E6%A5%BD%E5%A4%A9%E4%BB%96TOP%EF%BC%885%E9%A3%9F%EF%BC%89-01-K2XRvxBEzKeqvqMlL38fyxE4K7Tl6o.jpg",
@@ -81,12 +82,22 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative w-full">
+        {/* Desktop Hero */}
         <Image
           src={IMAGES.hero}
           alt="背脂醤油ラーメン"
           width={1920}
           height={1080}
-          className="w-full h-auto"
+          className="w-full h-auto hidden md:block"
+          priority
+        />
+        {/* Mobile Hero */}
+        <Image
+          src={IMAGES.heroMobile}
+          alt="背脂醤油ラーメン"
+          width={1080}
+          height={1080}
+          className="w-full h-auto md:hidden"
           priority
         />
       </section>
