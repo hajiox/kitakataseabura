@@ -42,23 +42,13 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon.jpg',
+        url: '/favicon.png',
         sizes: '32x32',
-      },
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        type: 'image/png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/favicon.png',
+    shortcut: '/favicon.png',
   },
   keywords: ['喜多方ラーメン', '背脂醤油ラーメン', '通販', 'お取り寄せ', '会津ブランド館', '送料無料', 'こってり', '国産豚背脂', '生麺'],
   robots: {
