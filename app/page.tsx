@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Star, MapPin, Phone, Clock, Truck } from "lucide-react"
 
 const IMAGES = {
-  hero: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/hf_20260318_045301_bd14a864-2533-40b5-bf59-4c79514c8c92-iIQhEF61bk31sfLnktt3pQwxuvevxj.jpg",
+  hero: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/main-ZMw2OrmUMAKn6eDJEkvAY4q1dTHevE.jpg",
   product2: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E6%A5%BD%E5%A4%A9%E4%BB%96TOP%EF%BC%882%E9%A3%9F%EF%BC%89-01-ZjQcsrPAXWGsyxjvI6qMbsRFZTUSje.jpg",
   product6: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E6%A5%BD%E5%A4%A9%E4%BB%96TOP%EF%BC%886%E9%A3%9F%EF%BC%89-01-wZf63xHN9gUtc9r2zel35qtHjSs1TO.jpg",
   product5soup: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E6%A5%BD%E5%A4%A9%E4%BB%96TOP%EF%BC%885%E9%A3%9F%EF%BC%89-01-K2XRvxBEzKeqvqMlL38fyxE4K7Tl6o.jpg",
