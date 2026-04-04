@@ -192,7 +192,7 @@ export default function Home() {
             />
             <div className="space-y-4 text-white leading-relaxed">
               <p>
-                {"喜多方市は、札幌・博多と並び「日本三大ラーメン」と称される地。"}
+{"喜多方市は、札幌・博多と並び「日本三大ラーメン」と称される地。"}
                 {"その評価を支えてきたのが、地元で長く愛される"}
                 <span className="font-bold text-amber-300">{'"多加水中太ちぢれ麺"'}</span>
                 {"です。"}
@@ -400,7 +400,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-3 gap-8">
             <a
-              href="https://store.shopping.yahoo.co.jp/aizubrandhall/"
+              href="https://store.shopping.yahoo.co.jp/aizubrandhall/e42bcbcfae2.html"
               target="_blank"
               rel="noopener noreferrer"
               className="block hover:opacity-90 transition-opacity text-center"
@@ -417,7 +417,7 @@ export default function Home() {
               <p className="text-xs text-red-600 font-bold mt-1">{"初めて当店をご利用のお客様に300円クーポン進呈中！"}</p>
             </a>
             <a
-              href="https://www.rakuten.co.jp/aizubrandhall/"
+              href="https://item.rakuten.co.jp/aizubrandhall/c/0000000050/"
               target="_blank"
               rel="noopener noreferrer"
               className="block hover:opacity-90 transition-opacity text-center"
@@ -434,7 +434,7 @@ export default function Home() {
               <p className="text-xs text-red-600 font-bold mt-1">{"初めて当店をご利用のお客様に300円クーポン進呈中！"}</p>
             </a>
             <a
-              href="https://www.amazon.co.jp/stores/%E4%BC%9A%E6%B4%A5%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89%E9%A4%A8/page/8C305889-A922-4B36-BB92-862DB800A02A?lp_asin=B08TMPSMN6&ref_=ast_bln"
+              href="https://www.amazon.co.jp/stores/page/711F00E2-9ED4-47B4-821C-F27E61000D71"
               target="_blank"
               rel="noopener noreferrer"
               className="block hover:opacity-90 transition-opacity text-center"
