@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, MapPin, Phone, Clock, Truck } from "lucide-react"
+import { MallLink } from "./mall-link"
 
 const IMAGES = {
   hero: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/main-ZMw2OrmUMAKn6eDJEkvAY4q1dTHevE.jpg",
@@ -410,10 +411,8 @@ export default function Home() {
             {"ご購入はこちらから"}
           </h2>
           <div className="grid grid-cols-3 gap-8">
-            <a
+            <MallLink
               href="https://store.shopping.yahoo.co.jp/aizubrandhall/e42bcbcfae2.html"
-              target="_blank"
-              rel="noopener noreferrer"
               className="block hover:opacity-90 transition-opacity text-center"
             >
               <Image
@@ -426,11 +425,9 @@ export default function Home() {
               <h4 className="font-bold text-foreground text-sm mb-1">{"Yahoo!ショッピング"}</h4>
               <p className="text-xs text-muted-foreground">{"PayPayポイントが貯まる使えるショッピングモールはこちら"}</p>
               <p className="text-xs text-red-600 font-bold mt-1">{"初めて当店をご利用のお客様に300円クーポン進呈中！"}</p>
-            </a>
-            <a
+            </MallLink>
+            <MallLink
               href="https://item.rakuten.co.jp/aizubrandhall/c/0000000050/"
-              target="_blank"
-              rel="noopener noreferrer"
               className="block hover:opacity-90 transition-opacity text-center"
             >
               <Image
@@ -443,11 +440,9 @@ export default function Home() {
               <h4 className="font-bold text-foreground text-sm mb-1">{"楽天市場"}</h4>
               <p className="text-xs text-muted-foreground">{"楽天ポイントが使える国内最大級のショッピングモールはこちら"}</p>
               <p className="text-xs text-red-600 font-bold mt-1">{"初めて当店をご利用のお客様に300円クーポン進呈中！"}</p>
-            </a>
-            <a
+            </MallLink>
+            <MallLink
               href="https://www.amazon.co.jp/stores/page/711F00E2-9ED4-47B4-821C-F27E61000D71"
-              target="_blank"
-              rel="noopener noreferrer"
               className="block hover:opacity-90 transition-opacity text-center"
             >
               <Image
@@ -459,7 +454,7 @@ export default function Home() {
               />
               <h4 className="font-bold text-foreground text-sm mb-1">{"Amazon"}</h4>
               <p className="text-xs text-muted-foreground">{"世界最大のショッピングモールでのお買い物はこちら"}</p>
-            </a>
+            </MallLink>
           </div>
         </div>
       </section>
