@@ -25,9 +25,10 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/ogp.jpg',
-        width: 1200,
-        height: 630,
+        width: 1217,
+        height: 647,
         alt: '喜多方背脂醤油ラーメン - 旨い！背脂の圧倒的コク。',
+        type: 'image/jpeg',
       },
     ],
     locale: 'ja_JP',
@@ -35,9 +36,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@Aizu_Brand_Kan',
+    creator: '@Aizu_Brand_Kan',
     title: '喜多方背脂醤油ラーメン | 創業100年の醤油×国産極上背脂【会津ブランド館】',
     description: '「あっさり」だけじゃない喜多方ラーメン界のニューウェーブ！創業100年の醤油と国産豚の極上背脂が織りなす至高の「こってり背脂醤油」をご自宅で。',
-    images: ['/ogp.jpg'],
+    images: [
+      {
+        url: '/ogp.jpg',
+        alt: '喜多方背脂醤油ラーメン - 旨い！背脂の圧倒的コク。',
+        width: 1217,
+        height: 647,
+      },
+    ],
   },
   icons: {
     icon: [
